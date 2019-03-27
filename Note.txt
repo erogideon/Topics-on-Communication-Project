@@ -1,0 +1,177 @@
+Routing in Vehicular Ad-hoc Networks: A Survey on Single- and Cross-Layer Design Techniques, and Perspectives
+https://ieeexplore.ieee.org/document/7894210
+
+A Survey of Cross-Layer Designs in Wireless Networks
+https://ieeexplore.ieee.org/document/6587995
+
+A Survey of Multicasting over Wireless Access Networks
+https://ieeexplore.ieee.org/document/6214948
+
+Cooperative Routing in Wireless Networks: A Comprehensive Survey
+https://ieeexplore.ieee.org/document/6999910
+
+Cross-Layer Aided Energy-Efficient Routing Design for Ad Hoc Networks
+https://ieeexplore.ieee.org/document/7017482
+
+A Survey of Beacon-Enabled IEEE 802.15.4 MAC Protocols in Wireless Sensor Networks
+https://ieeexplore.ieee.org/document/6687312
+
+Wireless Network Design for Control Systems: A Survey
+https://ieeexplore.ieee.org/document/8166737
+
+A Survey of MAC Layer Issues and Protocols for Machine-to-Machine Communications
+https://ieeexplore.ieee.org/document/7017481
+
+
+
+
+
+Introduction
+Discussion of relevant literature
+Statement of problem
+Proposed Solution
+General Approach
+Criteria for evaluating success of the project
+References
+
+
+https://www.researchgate.net/publication/312594605_Implementation_of_Secure_Force_64-bit_on_low_cost_8-bit_Microcontroller
+
+Security challenges of wireless sensors devices (MOTES)
+https://ieeexplore.ieee.org/document/6916650
+DOI: 10.1109/WCCAIS.2014.6916650
+
+Design of Dynamic clustering technique for enhancing life of Wireless Sensor Network
+https://ieeexplore.ieee.org/document/8463701
+DOI: 10.1109/ICCUBEA.2017.8463701
+
+
+2018 - A User Authentication Scheme of IoT Devices using Blockchain-Enabled Fog Nodes
+DOI: 10.1109/AICCSA.2018.8612856
+https://www.researchgate.net/publication/328828093_A_User_Authentication_Scheme_of_IoT_Devices_using_Blockchain-enabled_Fog_Nodes
+
+
+
+
+
+
+
+
+Literature Review
+
+Though fog computing is a part of cloud as it originate from it, which means some or must of the security threats faced by cloud computing also applies to fog computing e.g Data Altering, Unauthorised Access, Eavesdropping etc. It is more feasible to tackle the security threats in the fog computing, as more surphisticated security algorithms can easily be implemented in this layer than directly on the Edge. Security measures implemented on fog computing, allows services and application like low-latency network connections, amplifying Quality of Service (QoS) etc. This is because fog computing was designed to enhance efficiency and a significant reduction to the number of data being communicated to cloud for the sow purpose of processing, fog computing gathers the data from the Edge or sensor level as it is more closer tan cloud, it has processing, storage, and networking capability and serves as intermediary between sensor nodes and cloud computing. (Alrawais et al, 2017)
+
+Crptography referred the art of securing data communication between a sender and receiver. When it comes to data transmission, security is of uttermost importance, as it ensure the data being transmitted is not being listened to by intruders like Eavesdropping. With cryptography comes the rise of encryption and decryption as security measures to ensure only the intended receiver can access the data being transmitted by the sender.
+
+Encryptionis the process of converting plaintext into ciphertext, especially to prevent unauthorized access.
+
+Decryptionis the reverse process, converting ciphertextback into the original plaintext.
+
+In a conference paper on Authentication Schemes for Wireless Sensor Networks by Tajeddine et al, in 2014. Explored in the paper are the three key aspect in authentication as regards current cryptographic techniques available and they are: symmetric, asymmetric and hybrid cryptography.
+
+This type of cryptographic algorithm that uses a single known key refered to as secret key to both encrypt and decrypt data transmitted by sender/receiver. The encryption technique is popular because it is known to have less computation, processing, and very energy efficient. Which is the main reason why it is recommended for used in WSN constrained nodes. Example of symmetric algorithms are AES, DES, RC4 etc.
+
+This encryption is popular for its additional security feature it implements. the technique is also referred to as Public-key cryptography, it uses two different keys. The first is called the Public key, which is used to verify signature or encrypt the transmitted data, this key is made public. The second is called Private key, which is known only by the receiver or owner. For data to be transmitted from sender, a receivers public key is used to encrypt the data being sent, the data can only be signed and decrypted with the private key known only by the receiver because they alone have the private key. Due to the large size of key, asymmetric cryptography is known to consume processing power and uses more memory overhead compared to symmetric cryptography. Examples of algorithms are: ECC, RSA, DSA, Diffie-Hellman key exchange etc.
+
+This technique combines symmetric and asymmetric cryptography together. it is like a middle ground for both techniques, but tries to improve the
+downsides of both method e.g. overhead problem in asymmetric technique.
+An example of Hybrid cryptography is Transport Layer Security (TLS) protocol, which is combining both asymmetric or public-key exchange e.g. Diffie-Hellman with symmetric-key for the purpose of data encapsulation e.g. AES.
+
+
+In a conference article by Alkady, Habib and Rizk in 2013, they explored the two main WSNs issues with regards to security protocol. Their goal was to ensure significate reduction in both the overload in security protocols alongside message being encrypted and the key size.
+
+they then proposed a hybrid encryption algorithms, which is a security protocol that basically utilizes the advantage of both sysmmetric and asymmetric cryptograhpic techniques. With the combination of both techniques, it will "provide high security with minimized key maintenance". The proposed protocol will further solidify socurity in terms of integrity, confidentiality and authentication.
+
+for encryption, the elliptical curve cryptography (ECC) and advanced
+encryption (AES) where both used, which is as a result of combining sysmmetric and asymmetric cryptograhpic. for authentication was XORDUAL RSA algorithm
+and intergrity was Message-digest (MDS). With all these together, their proposed hybrid encryption algorithms significantly outperform others with regards to computation time and the size of text being encrypted.
+
+
+Authentication schemes for wireless sensor networks
+https://ieeexplore.ieee.org/document/6820562
+
+A new security protocol using hybrid cryptography algorithms
+https://ieeexplore.ieee.org/document/6736485
+
+WIRELESS SENSOR NETWORKS (WSN) | REMOTE MONITORING SYSTEMS
+https://wirelessmeshsensornetworks.wordpress.com/2014/02/20/structure-of-a-wireless-sensor-network/
+
+Distributed cooperative communication nodes control and optimization reliability for resource-constrained WSNs
+https://doi.org/10.1016/j.neucom.2016.12.105
+
+Energy-efficient multicast routing scheme for wireless sensor networks
+https://onlinelibrary.wiley.com/doi/10.1002/ett.2661
+
+Energy Efficiency in Wireless Ad Hoc Networks
+https://onlinelibrary.wiley.com/doi/10.1002/9781118579954.ch2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+According to a book by Cisco on IoT Fundamental written by Hanes et al, in 2017. They discribed thes four central feature as follows: 
+
+Sensing Unit: The unit comprises of Sensors and Actuators, where the responsibility of the Sensor is to sense or measure the environment they are placed in, while Actuators are responsible for acting on that environment, sometimes with instructions coming from the processing unit based on the data which was sensed by the sensor. Sometimes, the sensing unit only has sensing capability or multiple sensors without actuators. This is as a result of, the vast majority Sensor or Actualor node availible for various tasks.
+
+Processing Unit: This unit is responsible for coordinary all other parts on the node. which includes analying the data collected by the sensing unit, effient energy distribution within the node and also initializing instructions for data to be forward through the communication unit to another node. Because application use is different, they are variety of processing unit currently availible. also, some are widely used more than others such as microcontroller (e.g. Arduino see figure ----). The use of microcontroller are mainly popular because of its small size, "flexibility, programming simplicity, ubiquity, low power consumption, and low cost."
+
+Communication Unit: Being able to communicate effiently has always been very crutal for WSN node. the communication unit is responsibe for establishing communication with other nodes via the use of low-data-rate communication medium. In order for nodes to reach maximum distance, WSN nodes uses the communication medium to interconnect with other nodes and by doing this, traffic is passed through various nodes to reach the base station. Other reasons for interconnecing nodes are "cost, limited infrastructure availability, and ease of deployment." WSN node mainly use IEEE 802.15.4 standard, this is because it specifies variety of low-data-rate WPANs such as ZigBee and 6LoWPAN which is very much suitable for WSN node. Other communication means include 802.11 (Wi-Fi), 802.15.1 (Bluetooth), 802.15.4f (RFID), GSM/GPRS etc.
+
+Power Unit: This unit provides energy for WSN nodes to function on the field without being connected to power supply. Because of the power unit, WSN nodes can be deployed in almost any environment. The power unit is a very crutial part of WSN nodes and efficient destribution of power for the node to function effectively is of uttermost importance for a reliable wireless sensor network.
+
+
+
+
+
+The combination of encryption methods has various advantages. 
+One is that a connection channel is established between two users' sets of equipment. Users then have the ability to communicate through hybrid encryption. 
+Asymmetric encryption can slow down the encryption process, but with the simultaneous use of symmetric encryption, both forms of encryption are enhanced. 
+The result is the added security of the transmittal process along with overall improved system performance.
+
+
+Phil Zimmermann in 1991 developted an algorithm called Pretty Good Privacy (PGP), the algorithm is an encryption used in establishing authentication and privacy for data communication. Amongts the capabilities of PGP are encrypting, decrypting, signing etc. Due to the capability to provide confidentiality and authentication service, its uses extends to application for file storage and electronic mail. PGP Hybrid algorithm, combines hashing, data compression, symmetric-key cryptography, and  public-key cryptography as one. The encryption process of PGP is first to encrypt the symmetric key that will be used as session key for mails exchange. Public key crytography (RSA) is used in order to encrypt the symmetric key, this is because the symmetric key has to be given to the receiver without the knowledge of eavesdroppers. Using asymmetric technique in this form, it gives a sense of assurance that attackers would not be capable of decrypting the session key in a given polynomial time. Only the receiver, can decrypt the messages being sent using their private key only known to them.
+
+
+
+
+With the above limitations such as Limited processing power, memory, Lossy communication, transmission speeds and power on WSN nodes are called Constrained Nodes, this can cause the node to be vulnerable due to limited resource to function. It sometimes reflect back on the network by making it vulnerable and unreliable. Another terminology is Constrianed-Node Network, which highlight the power and communication aspect of constrained node. It refers to "low-power and lossy networks (LLNs)", where low-power reflects dependency on battery-powered constrained node or other power source. While Lossy networks, highlights how possible interference might occur in the network, this could be due to various transmission signal collision in sensor environment.
+
+
+
+
+Various research papers has adopted the princeples of Low-Energy Adaptive Clustering Hierarchy (LEACH) algorithm, such paper includes Elhoseny et al in 2015, Abdulasik and Suriyakrishnaan published in 2017, Randhawa and Dhami in 2018 and Kuchipudi, Qyser and Balaram in 2016. The LEACH approach deals with the use of CLuster Head (CH)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
