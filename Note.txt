@@ -138,17 +138,7 @@ Asymmetric encryption can slow down the encryption process, but with the simulta
 The result is the added security of the transmittal process along with overall improved system performance.
 
 
-Phil Zimmermann in 1991 developted an algorithm called Pretty Good Privacy (PGP), the algorithm is an encryption used in establishing authentication and privacy for data communication. Amongts the capabilities of PGP are encrypting, decrypting, signing etc. Due to the capability to provide confidentiality and authentication service, its uses extends to application for file storage and electronic mail. PGP Hybrid algorithm, combines hashing, data compression, symmetric-key cryptography, and  public-key cryptography as one. The encryption process of PGP is first to encrypt the symmetric key that will be used as session key for mails exchange. Public key crytography (RSA) is used in order to encrypt the symmetric key, this is because the symmetric key has to be given to the receiver without the knowledge of eavesdroppers. Using asymmetric technique in this form, it gives a sense of assurance that attackers would not be capable of decrypting the session key in a given polynomial time. Only the receiver, can decrypt the messages being sent using their private key only known to them.
-
-
-
-
-With the above limitations such as Limited processing power, memory, Lossy communication, transmission speeds and power on WSN nodes are called Constrained Nodes, this can cause the node to be vulnerable due to limited resource to function. It sometimes reflect back on the network by making it vulnerable and unreliable. Another terminology is Constrianed-Node Network, which highlight the power and communication aspect of constrained node. It refers to "low-power and lossy networks (LLNs)", where low-power reflects dependency on battery-powered constrained node or other power source. While Lossy networks, highlights how possible interference might occur in the network, this could be due to various transmission signal collision in sensor environment.
-
-
-
-
-Various research papers has adopted the princeples of Low-Energy Adaptive Clustering Hierarchy (LEACH) algorithm, such paper includes Elhoseny et al in 2015, Abdulasik and Suriyakrishnaan published in 2017, Randhawa and Dhami in 2018 and Kuchipudi, Qyser and Balaram in 2016. The LEACH approach deals with the use of CLuster Head (CH)
+Phil Zimmermann in 1991 developted an algorithm called Pretty Good Privacy (PGP), the algorithm is an encryption used in establishing authentication and privacy for data communication. Amongts the capabilities of PGP are encrypting, decrypting, signing etc. Due to the capability to provide confidentiality and authentication service, its uses extends to application for file storage and electronic mail. PGP Hybrid algorithm, combines hashing, data compression, symmetric-key cryptography, and  public-key cryptography as one. The encryption process of PGP is first to encrypt the symmetric key that will be used as session key for mails exchange. Public key crytography (RSA) is used in order to encrypt the symmetric key, this is because the symmetric key has to be given to the receiver without the knowledge of eavesdroppers. Using asymmetric technique in this form, it gives a sense of assurance that attackers would not be capable of decrypting the session key in a given polynomial time. Only the receiver, can decrypt the messages being sent using their private key only known to them. (Agrawal & Mehrotra, 2016)(Stallings, 2014)
 
 
 
@@ -156,6 +146,51 @@ Various research papers has adopted the princeples of Low-Energy Adaptive Cluste
 
 
 
+Various research papers has adopted the princeples of Low-Energy Adaptive Clustering Hierarchy (LEACH) algorithm, such paper includes Elhoseny et al in 2015, Abdulasik and Suriyakrishnaan published in 2017, Randhawa and Dhami in 2018 and Kuchipudi, Qyser and Balaram in 2016. The LEACH approach is a clustering-based protocol which deals with the use of assigning a Cluster Head (CH) for every group of clustered devices, where the nodes transmit its datas to the CH. The aim of clustering devices with a leading CH, is mainly for the sake of energy optimization. The central focus of LEACH, is to significantly reduces and maintain the energy consumption at each clustering so to maximize life span of nodes on the network.
+
+
+Comparison Table
+	Algorithms and Types	Block Size	Key Size	Encryption & Decryption	Power Consumption	Security	Speed	Memory	Edge Devices	Fog Computing
+Symmetric	AES (Block)	128 bits	128 – 256	High & High	Medium	Medium	Fast	Medium	Fast but not so secure	Fast
+	DES (Block)	64 bits	56	Medium & Medium	Low	Low	Slow	High		
+	RC4 (Stream)	64 bits	8 - 2048		Medium	Low	Very Fast	Medium		
+Asymmetric	ECC		160 - 521			High	High	High	Secure but not so fast	Secure
+	RSA		1024 - 15,360	Slow & Fast			Low			
+	DSA			Fast & Slow						
+Hybrid	Combines Symmetric & Asymmetric (e.g. PGP)					Very High	Very Fast	Very High	Limited on constrained device (large computation complexity, memory and Power)	Fast, secure and very suitable on Fog because it is not limited by power, memory or computation
+
+
+
+Symmetric 
+It utilizes password authentication to validate identity of receiver
+Decryption is only possible with secret key
+
+A major problem is key distribution
+To gurantee key exchange, it requires sender and receiver to personality meet
+Digital signature cannot be provided
+
+
+Asymmetric
+Security is significantly increased
+Private key is only known to receiver
+Key exchange is not required, meaning no key distribution problem
+Provides reputable digital signature
+
+The major problem for this algorithm is speed
+Other algorithms tends to be faster than public key encryption
+
+
+Hybrid
+A major advantage is being able combine the convenience of public-key and symmetric-key encryption as one.
+With combining symmetric and asymmtric encryption, the problem of slow encryption of asymmetric algorithm is solved.
+Solves the problem of key distribution in Symmetric algorithm
+Combining both algorithms together does not affect security of algorithm
+With Hybrid algorithm like PGP, it profiles a significant solution to the disadvantages of both symmetric and asymmetric algorithm.
+The advantages of PGP supercides its disadvantages
+
+Hybrid PGP algorithm is a complex implementation to easily understand
+Same version of PGP must be in use at both sender and receiver end
+Key management is sometimes a problem if not properly familiar with it.
 
 
 
@@ -164,8 +199,11 @@ Various research papers has adopted the princeples of Low-Energy Adaptive Cluste
 
 
 
+The Internet of Things (IoT) is a significant research area in the current technology landscape. Where the impact of internet-connected devices is widespread and significant. With IoT comes Wireless Sensor Networks (WSNs) which is considered as a subcategory of IoT, it is defined as "a collaborative network of small wireless sensor devices, sensing a physical phenomenon" (Elshakankiri, 2018). These devices allow a shift in focus from humans interacting with sensors, to sensors reading data directly from their environment and communicating data to a base station, where some of its applications includes e.g. Health Care, Agriculture etc. As regards the distributed nature of WSN sensor node, the security of the data being collected and passing through various sensor node is of uttermost priority. There are diverse security algorithms that can be implemented on WSN node, but due to the constrained nature of WSN nodes, there is a tradeoff on which algorithm to implement for WSN constrained node, that can boost the life span of node on the network. Also, at what layer Edge Device or Fog should security algorithms be implemented. 
 
 
+Is a combination of smart/small devices with the capability of wireless communication, these smart devices are either called Nodes or Motes. 
+WSN operates an infrastructure-less architecture. 
 
 
 
