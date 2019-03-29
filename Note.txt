@@ -208,6 +208,37 @@ WSN operates an infrastructure-less architecture.
 
 
 
+ECC (Elliptic curve cryptography) is a public key cryptography technique. The strength of this algorithm involves the use of special arithmetic formula. ECC algorithm was deemed most recommended type of Asymmetric cryptography for WSN, this is as a result of its suitability for low power and computationally constrained sensors. In the world of WSN, ECC has stand out amonsgt many different algorithms, this is because ECC is one of the most secure public-key and even symmetric-key encryption. In order to ensure uttermost utilization of ECC algorithm for resource constrained WSN, it is very important that a good parameter value is chosen for implementation. Amonsgt the application of task performed by ECC includes key agreement, digital signatures, pseudo-random generators etc.
+
+
+
+
+
+RSA (Rivest–Shamir–Adleman) is one of the earliest public key cryptography and it used for data security. Although it is used less frequently of recent because of the slow processing time. The most important step in RSA is key generation. The idea of the key generation is to find or calculate the Decryption and Encryption pair that fit each other (because we can’t just use any random key). To achieve this, we have to pick 2 very large or even enormous prime number which is now put through different steps such as Multiplication and removing the common factors e.t.c. Encryption process is done by converting the data in a number and using a simple modulo formular such as 
+B data can be represented as 2 and if encryption key is (5, 14) and decryption key is (11, 14)
+2^5(Modulo 14) = 4 therefore, 4 will be the ciphertext 
+The same method is used for decryption by using the ciphertext 
+4 ^11(Modulo 14) = 2.
+This process is very time consuming if we use the Key sizes 1,024 to 4,096 bit.
+NOTE: 5 and 11 are going to be private while 14 will be public made public
+
+DSA is a digital signature algorithm used to validate the authenticity, non-repudiation and integrity  of messages, digital file and documents. This is a public key crptography and such as RSA, requires users to generate an encryption and decryption key pair that matches each other. Digital signature involves using hash algorithm to convert the file to a fixed length of number (Known as DIGEST) and use the encryption key on the fixed length of number into a cipher text or a digital signature for the document. The decryption process is done by using the decryption key on the digital signature which will produce the fixed length of number known as DIGEST. After getting the digest, we now use the same hash algorithm used in the encryption process to hash the documents and see if the digest matches the digest produced in the decryption phase and if they do, we can be confident the document is good.
+
+Digital Signature Algorithm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
